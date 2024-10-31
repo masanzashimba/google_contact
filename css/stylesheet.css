@@ -1,0 +1,230 @@
+:root {
+  --primary-light-color: #b7dcfa;
+  --primary-color: #0b57d0;
+  --hover-color-component: #e6edfa;
+  --hover-color-icon: #e9ebed;
+  --text-color: #5f6368;
+
+  --background-color: #f8fafd;
+  --white: #fff;
+
+  --transition: all 0.5s ease-in-out;
+  --font-family: "Roboto", sans-serif;
+
+  --border-radius: 5px;
+
+  --shadow: -6px 10px 11px -2px rgba(161, 161, 161, 1);
+}
+
+body {
+  background: rgba(246, 248, 252, 1);
+}
+.title{
+  color: #5f6368;
+  display: block;
+    font-family: "Product Sans", Arial, sans-serif;
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+.title__primary{
+  font-size: 24px;
+}
+.pt-3 {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+.custom-gap {
+  gap: 14px;
+}
+.contain{
+  background-color: var(--primary-light-color);
+  border-radius: 16px;
+  width: 182px;
+  height: 56px;
+}
+
+.form-control {
+  width: 100%;
+  height: 3rem;
+  border-radius: var(--border-radius);
+  background-color: #f1f3f4;
+  border: none;
+  padding-left: 40px; /* Ajout d'espace pour l'icône */
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  font-size: 24px; /* Ajuste la taille de l'icône selon tes besoins */
+  color: #6c757d; /* Couleur de l'icône */
+  opacity: 1.5; /* Ajuste l'opacité de l'icône */
+  pointer-events: none; /* Empêche les clics sur l'icône */
+}
+.contact_svg{
+  display: block;
+}
+.total-contacts{
+  display: block;
+  margin: 0;
+}
+.title-level-3 {
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+/* Taille du SVG à 24x24 */
+.label-svg {
+  width: 19px;
+  height: 14px;
+}
+
+/* Positionner les icônes à droite et les masquer par défaut */
+.icons {
+  display: flex;
+}
+
+.edit-icon, .delete-icon {
+  color: #6c757d;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  opacity: 0; /* Masquer les icônes par défaut */
+}
+
+.f-s{
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(68, 71, 70, 1);
+}
+
+.label-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.label-actions {
+  display: none; /* Caché par défaut */
+}
+
+.label-item:hover .label-actions {
+  display: flex; /* Afficher les actions au survol */
+}
+
+.label-item:hover {
+  background-color: var(--hover-color-component); /* Changer la couleur de fond au survol */
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.material-symbols-outlined {
+  color: var(--text-color);
+}
+
+/* Suppression des bordures et de la couleur de fond */
+#contact-list-body tr {
+  border: none;
+  background-color: #ffff;
+  height: 72px;
+}
+
+#contact-list-body td {
+  border: none;
+  vertical-align: middle; /* Centre le texte verticalement */
+  padding: 0 16px; /* Ajoute un peu de padding horizontal */
+  height: 72px; /* Définit la hauteur des cellules */
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(68, 71, 70, 1);
+}
+.contact-initial {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-right: 10px;
+}
+/* Styles des libellés */
+.label-box {
+  width: 60px;
+  height: 34px;
+  border-radius: 8px;
+  border: 1px solid rgba(196, 196, 197, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  overflow: hidden; /* Pour éviter tout débordement */
+  text-overflow: ellipsis; /* Couper le texte s'il est trop long */
+  white-space: nowrap;
+}
+
+/* Styles des initiales du contact */
+.contact-initial {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.custom-btn {
+  width: 83px;
+  height: 46px;
+  background-color: #fff; /* Couleur de fond blanche */
+  border: 1px solid rgba(196, 196, 197, 1); /* Bordure spécifiée */
+  border-radius: 8px; /* Border radius personnalisé */
+}
+
+.custom-btn svg {
+  fill: #007bff; /* Couleur bleue pour l'icône SVG */
+}
+
+.custom-btn:hover {
+  background-color: #f0f0f0; /* Optionnel : légère teinte survol */
+}
+
+.custom-btn:active {
+  background-color: #e0e0e0; /* Optionnel : couleur différente quand actif */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Appliquer la largeur de 40% pour les écrans plus grands (à partir de 768px) */
+@media (min-width: 768px) {
+  .form-control {
+    width: 100%; /* Largeur appliquée uniquement aux écrans de 768px et plus */
+  }
+  .w-75 {
+    width: 100% !important;
+    height: auto;
+  }
+  .spacing__width{
+    width: 182px;
+    color: var(--text-color);
+  }
+  /* .p-l{
+    padding-left: 20px;
+  } */
+}
